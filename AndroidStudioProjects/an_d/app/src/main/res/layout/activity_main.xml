@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+    <!--question mark layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--버튼 오른쪽 정렬-->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <!--배경없애야함-->
+        <ImageButton
+            android:id="@+id/bt_question"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@mipmap/question_mark"/>
+
+    </LinearLayout>
+
+<!--    <TextView
+        android:id="@+id/AppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:text="IRIS"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="16dp" />-->
+
+    <!-- text view spot-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="what do you want?"
+        android:textColor="#FFFFFF" />
+
+    <!-- search layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- search text view spot-->
+
+
+        <Button
+            android:id="@+id/bt_webpage"
+            android:layout_width="103dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="48dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="WEB PAGE"
+            android:onClick="mOnPopupClick"
+            app:layout_constraintBottom_toTopOf="@+id/bt_snooping"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/bt_keywords"
+            android:layout_width="103dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="48dp"
+            android:layout_marginLeft="58dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="KEYWORDS"
+            app:layout_constraintBottom_toTopOf="@+id/bt_ddos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button" />
+
+    </LinearLayout>
+
+    <!-- attack layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- attack text view spot-->
+
+
+        <Button
+            android:id="@+id/bt_snooping"
+            android:layout_width="103dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="58dp"
+            android:layout_marginStart="58dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="SNOOPING"
+            android:onClick="sOnClick"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button6"
+            tools:layout_editor_absoluteY="354dp" />
+
+        <Button
+            android:id="@+id/bt_ddos"
+            android:layout_width="103dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="DDoS"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="354dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="80dp"
+        android:text="덕성여자대학교  IT미디어공학과  2018년도 졸업작품"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        app:fontFamily="serif"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="482dp" />
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="duksung w uni"
+        />
+</LinearLayout>

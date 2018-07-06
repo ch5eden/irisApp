@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+    <!--question mark layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--버튼 오른쪽 정렬-->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <!--배경없애야함-->
+        <ImageButton
+            android:id="@+id/bt_question"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@mipmap/question_mark"/>
+
+    </LinearLayout>
+
+    <!-- text view spot-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="what do you want?"
+        android:textColor="#FFFFFF" />
+
+
+    <!-- search layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bt_webpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="#a40101"
+            android:onClick="mOnPopupClick"
+            android:text="WEB PAGE"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/bt_keywords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#a40101"
+            android:textColor="#FFFFFF"
+            android:text="KEYWORDS"/>
+
+    </LinearLayout>
+
+
+    <!-- attack layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bt_snooping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="#a40101"
+            android:textColor="#FFFFFF"
+            android:text="SNOOPING"/>
+
+        <Button
+            android:id="@+id/bt_ddos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#a40101"
+            android:textColor="#FFFFFF"
+            android:text="DDoS" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="duksung w uni"
+        />
+
+<!--    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+
+
+    </LinearLayout>-->
+
+</LinearLayout>

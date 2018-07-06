@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--비디오 보여주는 화면-->
+    <VideoView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/video" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="play raspberry pi streaming video."
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="300dp" />
+
+    <!--화면 닫는 버튼-->
+    <Button
+        android:text="확인"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:padding="16dp"
+        android:background="#00000000"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:onClick="sOnClose"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
